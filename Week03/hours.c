@@ -24,14 +24,13 @@ int main(void)
     printf("%.1f hours\n", calc_hours(hours, weeks, output));
 }
 
-// TODO: complete the calc_hours function
+// Completed the calc_hours function
 float calc_hours(int hours[], int weeks, char output)
 {
-    // adding the hours up
     int sum = 0;
     for (int i = 0; i < weeks; i++)
     {
-        sum = hours[i] + sum;
+        sum += hours[i];
     }
 
     if (output == 'T')
@@ -40,6 +39,6 @@ float calc_hours(int hours[], int weeks, char output)
     }
     else
     {
-        return (float) sum/weeks;
+        return (float) sum / weeks;
     }
 }
