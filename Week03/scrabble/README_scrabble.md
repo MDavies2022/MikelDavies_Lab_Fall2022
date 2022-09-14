@@ -1,7 +1,7 @@
 ---
-files: [scrabble.c]
+files: scrabble.c
 url: https://cdn.cs50.net/2022/fall/labs/2/scrabble/README.md
-window: [terminal]
+window: terminal
 ---
 
 # Lab 2: Scrabble
@@ -122,7 +122,9 @@ style50 scrabble.c
 
 You should see a message that says "Lab 2: Scrabble submitted successfully!"
 
-{% spoiler "Want to see the staff's solution?" %}
+<details><summary>CLICK ME</summary>
+<p>
+ 
 ```c
 #include <ctype.h>
 #include <cs50.h>
@@ -180,4 +182,5 @@ int compute_score(string word)
     return score;
 }
 ```
-{% endspoiler %}
+</p>
+</details>
