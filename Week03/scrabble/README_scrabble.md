@@ -1,10 +1,8 @@
 # Lab 2: Scrabble
 
-{% alert warning %}
 
 Labs are practice problems which, time permitting, may be started or completed in your section, and are assessed on correctness only. You are encouraged to collaborate with classmates on this lab, though each member in a group collaborating is expected to contribute equally to the lab.
 
-{% endalert %}
 
 Determine which of two Scrabble words is worth more.
 
@@ -40,11 +38,8 @@ Complete the implementation of `scrabble.c`, such that it determines the winner 
 
 ### Walkthrough
 
-{% alert primary %}
 
 This video was recorded when the course was still using CS50 IDE for writing code. Though the interface may look different from your codespace, the behavior of the two environments should be largely similar!
-
-{% endalert %}
 
 {% video https://video.cs50.io/RtjxxxlN1gc %}
 
