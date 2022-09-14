@@ -1,9 +1,3 @@
----
-files: scrabble.c
-url: https://cdn.cs50.net/2022/fall/labs/2/scrabble/README.md
-window: terminal
----
-
 # Lab 2: Scrabble
 
 {% alert warning %}
@@ -122,7 +116,7 @@ style50 scrabble.c
 
 You should see a message that says "Lab 2: Scrabble submitted successfully!"
 
-<details><summary>CLICK ME</summary>
+<details><summary>Staff Solution</summary>
 <p>
  
 ```c
