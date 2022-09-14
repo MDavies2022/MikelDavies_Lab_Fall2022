@@ -113,6 +113,8 @@ style50 scrabble.c
 
 You should see a message that says "Lab 2: Scrabble submitted successfully!"
 
+## Still Need More Help?
+
 <details><summary>Staff Solution</summary>
 <p>
  
