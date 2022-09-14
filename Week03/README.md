@@ -100,3 +100,13 @@ Download the distribution code by typing the following into your terminal: wget 
 Go to XYZ.com
 
 Then download the distribution code by typing the following into your terminal: wget https://cdn.cs50.net/2022/fall/labs/2/scrabble.zip
+
+### When You're Done With a Problem...
+
+<details><summary>Solutions</summary>
+  <p>
+    https://github.com/MDavies2022/MikelDavies_Lab_Fall2022/tree/main/Week03/Solution
+  </p>
+</details>
+  
+  
