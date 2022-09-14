@@ -50,7 +50,8 @@ video: https://video.cs50.io/RtjxxxlN1gc
 
 * Recall that computers represent characters using [ASCII](http://asciitable.com/), a standard that represents each character as a number.
 
-<details><summary> ### Not sure how to solve? </summary>
+### Not sure how to solve?
+<details><summary>Watch this Walkthrough</summary>
 <p>
 
 video: https://video.cs50.io/USiLkXuXJEg
