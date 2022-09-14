@@ -101,7 +101,7 @@ Go to XYZ.com
 
 Then download the distribution code by typing the following into your terminal: wget https://cdn.cs50.net/2022/fall/labs/2/scrabble.zip
 
-### When You're Done With a Problem...
+## When You're Done With a Problem...
 
 <details><summary>Solutions</summary>
   <p>
