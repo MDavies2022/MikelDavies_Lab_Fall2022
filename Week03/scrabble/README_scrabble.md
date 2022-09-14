@@ -55,8 +55,8 @@ video: https://video.cs50.io/RtjxxxlN1gc
 
 video: https://video.cs50.io/USiLkXuXJEg
  
- <p>
- <details>
+ </p>
+ </details>
 
 ### How to Test Your Code
 
