@@ -38,7 +38,6 @@ Complete the implementation of `scrabble.c`, such that it determines the winner 
 
 ### Walkthrough
 
-
 This video was recorded when the course was still using CS50 IDE for writing code. Though the interface may look different from your codespace, the behavior of the two environments should be largely similar!
 
 video: https://video.cs50.io/RtjxxxlN1gc
@@ -51,9 +50,13 @@ video: https://video.cs50.io/RtjxxxlN1gc
 
 * Recall that computers represent characters using [ASCII](http://asciitable.com/), a standard that represents each character as a number.
 
-"Not sure how to solve?"
+<details><summary> ### Not sure how to solve? </summary>
+<p>
 
 video: https://video.cs50.io/USiLkXuXJEg
+ 
+ <p>
+ <details>
 
 ### How to Test Your Code
 
