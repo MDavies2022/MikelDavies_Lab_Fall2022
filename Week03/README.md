@@ -59,7 +59,7 @@ Enter T for total hours, A for average hours per week: A
 6.7 hours
 ```
 
-Download the distribution code by typing the following into your terminal: wget https://cdn.cs50.net/2022/fall/labs/2/hours.c
+Download the distribution code by typing the following into your terminal: 'wget https://cdn.cs50.net/2022/fall/labs/2/hours.c'
 
 
 ## **Problem 5**
@@ -74,7 +74,7 @@ $ [directory] ./no-vowels hello
 h3ll0
 ```
 
-Download the distribution code by typing the following into your terminal: wget https://cdn.cs50.net/2022/fall/labs/2/no-vowels.c
+Download the distribution code by typing the following into your terminal: 'wget https://cdn.cs50.net/2022/fall/labs/2/no-vowels.c'
 
 
 ## **Problem 6**
@@ -92,14 +92,14 @@ Enter your password: Aa1!
 Your password is valid!
 ```
 
-Download the distribution code by typing the following into your terminal: wget https://cdn.cs50.net/2022/fall/labs/2/password.c
+Download the distribution code by typing the following into your terminal: 'wget https://cdn.cs50.net/2022/fall/labs/2/password.c'
 
 
 ## **LAB PROBLEM**
 
 Go to XYZ.com
 
-Then download the distribution code by typing the following into your terminal: wget https://cdn.cs50.net/2022/fall/labs/2/scrabble.zip
+Then download the distribution code by typing the following into your terminal: 'wget https://cdn.cs50.net/2022/fall/labs/2/scrabble.zip'
 
 ## When You're Done With a Problem...
 
