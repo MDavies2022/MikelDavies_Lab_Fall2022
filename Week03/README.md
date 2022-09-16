@@ -97,7 +97,7 @@ Download the distribution code by typing the following into your terminal: 'wget
 
 ## **LAB PROBLEM**
 
-Go to XYZ.com
+Go to 'https://cs50.harvard.edu/college/2022/fall/labs/2/'
 
 Then download the distribution code by typing the following into your terminal: 'wget https://cdn.cs50.net/2022/fall/labs/2/scrabble.zip'
 
