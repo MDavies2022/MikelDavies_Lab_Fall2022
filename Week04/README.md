@@ -8,11 +8,12 @@ The problems are listed in order of difficulty!
 
 ## **Problem 1**
 
-Write a program  `student.c` that takes that takes one integer provided as command line argument and prompts the user for a student's information, and then prints it out.
+Write a program  `student.c` that takes that takes one integer and prompts the user for a student's information, and then prints it out.
 
 ```
 Usage:
-[directory] $ ./student 2
+[directory] $ ./student 
+number of students: 2
 name: George
 birthday: 09/21/1999
 gpa: 4
