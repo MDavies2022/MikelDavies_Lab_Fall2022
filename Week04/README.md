@@ -148,4 +148,4 @@ Download the distribution code by typing the following into your terminal: `wget
 
 Go to 'https://cs50.harvard.edu/college/2022/fall/labs/3/'
 
-Then download the distribution code by typing the following into your terminal: 'wget https://cdn.cs50.net/2022/fall/labs/3/sort.zip'
+Then download the distribution code by typing the following into your terminal: `wget https://cdn.cs50.net/2022/fall/labs/3/sort.zip`
