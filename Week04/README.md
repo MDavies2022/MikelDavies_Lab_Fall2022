@@ -24,43 +24,6 @@ George's birthday is 09/21/1999 and they have a gpa = 4
 Helen's birthday is 02/29/2002 and they have a gpa = 3.8
 ```
 
-<details><summary>Solution</summary>
-  <p>
-    ```
-#include <stdio.h>
-#include <cs50.h>
-
-typedef struct
-{
-    string name;
-    string birthday;
-    float gpa;
-}
-student;
-
-int main(void)
-{
-    int num = get_int("number of students: ");
-
-    student students[num];
-
-    for (int i = 0; i < num; i++)
-    {
-        students[i].name = get_string("name: ");
-        students[i].birthday = get_string("birthday: ");
-        students[i].gpa = get_float("gpa: ");
-    }
-
-    for (int i = 0; i < num; i++)
-    {
-        printf("%s's birthday is %s and they have a gpa = %f.\n", students[i].name, students[i].birthday, students[i].gpa);
-    }
-    return 0;
-}
-    ```
-  </p>
-</details>
-
 ## **Problem 2**
 
 Write a recursive program `factorial.c` that takes an integer n and computes its factorial. (The factorial of 5, for example, is 5 * 4 * 3 * 2 * 1 = 120).
@@ -72,19 +35,6 @@ number: 5
 factorial: 120
 ```
 
-<details><summary>Solution</summary>
-  <p>
-  ```
-int factorial(int n)
-{
-    if (n == 0)
-        return 1;
-    return n * factorial(n - 1);
-}
-  ```
-  </p>
-</details>
-
 ## **Problem 3**
 
 Write a program `fibonacci.c` that computes the nth Fibonacci number. The 0th Fibonacci number is 0, the 1st Fibonacci number is 1, and every subsequent Fibonacci number is sum of the two preceding Fibonacci numbers.
@@ -94,22 +44,6 @@ Usage:
 [directory] $ ./fibonacci 5
 The n=5 fibonacci number is 5
 ```
-
-<details><summary>Solution</summary>
-  <p>
-  ```
-  int fib(int n)
-  {
-      if (n == 0)
-          return 0;
-      if (n == 1)
-          return 1;
-      return fib(n - 1) + fib(n - 2);
-  }
-  ```
-  </p>
-</details>
-
 
 ## **Problem 4**
 
@@ -141,30 +75,6 @@ int main(void)
 }
 ```
 
-<details><summary>Solution</summary>
-  <p>
-  ```
-  for (int i = 0; i < n - 1; i++)
-  {
-      bool swaps = false;
-      for (int j = 0; j < n - 1 - i; j++)
-      {
-          if (values[j] > values[j + 1])
-          {
-              swaps = true;
-              int temp = values[j];
-              values[j] = values[j + 1];
-              values[j + 1] = temp;
-          }
-      }
-
-      if (swaps == false)
-          break;
-  }
-  ```
-  </p>
-</details>
-
 ## **Problem 5**
 
 Write a program `selection.c` that sorts an array of integers using selection sort.
@@ -194,27 +104,6 @@ int main(void)
 }
 ```
 
-<details><summary>Solution</summary>
-  <p>
-  ```
-  for (int i = 0; i < n - 1; i++)
-  {
-      int min_index = i;
-      for (int j = i + 1; j < n; j++)
-      {
-          if (values[j] < values[min_index])
-          {
-              min_index = j;
-          }
-      }
-      int temp = values[i];
-      values[i] = values[min_index];
-      values[min_index] = temp;
-  }
-  ```
-  </p>
-</details>
-
 ## **Problem 6**
 
 Write a program `temps.c` that sorts the average high temperature for cities in the US.
@@ -238,93 +127,6 @@ San Francisco: 66
 temps/ $
 ```
 
-<details><summary>Solution</summary>
-  <p>
-  ```
-  #include <cs50.h>
-  #include <stdio.h>
-
-  #define NUM_CITIES 10
-
-  typedef struct
-  {
-      string city;
-      int temp;
-  }
-  avg_temp;
-
-  avg_temp temps[NUM_CITIES];
-
-  void sort_cities(void);
-
-  int main(void)
-  {
-      temps[0].city = "Austin";
-      temps[0].temp = 97;
-
-      temps[1].city = "Boston";
-      temps[1].temp = 82;
-
-      temps[2].city = "Chicago";
-      temps[2].temp = 85;
-
-      temps[3].city = "Denver";
-      temps[3].temp = 90;
-
-      temps[4].city = "Las Vegas";
-      temps[4].temp = 105;
-
-      temps[5].city = "Los Angeles";
-      temps[5].temp = 82;
-
-      temps[6].city = "Miami";
-      temps[6].temp = 97;
-
-      temps[7].city = "New York";
-      temps[7].temp = 85;
-
-      temps[8].city = "Phoenix";
-      temps[8].temp = 107;
-
-      temps[9].city = "San Francisco";
-      temps[9].temp = 66;
-
-      sort_cities();
-
-      printf("\nAverage July Temperatures by City\n\n");
-
-      for (int i = 0; i < NUM_CITIES; i++)
-      {
-          printf("%s: %i\n", temps[i].city, temps[i].temp);
-      }
-  }
-
-  // TODO: Sort cities by temperature in descending order
-  void sort_cities(void)
-  {
-      for (int i = 0; i < NUM_CITIES - 1; i++)
-      {
-          bool swaps = false;
-          for (int j = 0; j < NUM_CITIES - 1 - i; j++)
-          {
-              if (temps[j].temp < temps[j + 1].temp)
-              {
-                  swaps = true;
-                  avg_temp temp = temps[j];
-                  temps[j] = temps[j + 1];
-                  temps[j + 1] = temp;
-              }
-          }
-          if (!swaps)
-          {
-              break;
-          }
-      }
-  }
-  ```
-  </p>
-</details>
-
 Download the distribution code by typing the following into your terminal: `wget https://cdn.cs50.net/2022/fall/labs/3/temps.zip`
 
 ## **Problem 7**
@@ -339,52 +141,6 @@ Element 1: 10
 Element 2: -1
 The max value is 10.
 ```
-
-<details><summary>Solution</summary>
-  <p>
-  ```
-  // Practice writing a function to find a max value
-
-  #include <cs50.h>
-  #include <stdio.h>
-
-  int max(int array[], int n);
-
-  int main(void)
-  {
-      int n;
-      do
-      {
-          n = get_int("Number of elements: ");
-      } 
-      while (n < 1);
-
-      int arr[n];
-
-      for (int i = 0; i < n; i++)
-      {
-          arr[i] = get_int("Element %i: ", i);
-      }
-
-      printf("The max value is %i.\n", max(arr, n));
-  }
-
-  // TODO: return the max value
-  int max(int array[], int n)
-  {
-      int max = array[0];
-      for (int i = 1; i < n; i++)
-      {
-          if (array[i] > max)
-          {
-              max = array[i];
-          }
-      }
-      return max;
-  }
-  ```
-  </p>
-</details>
 
 Download the distribution code by typing the following into your terminal: `wget https://cdn.cs50.net/2022/fall/labs/3/max.zip`
 ## **LAB PROBLEM**
