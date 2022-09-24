@@ -98,14 +98,14 @@ The n=5 fibonacci number is 5
 <details><summary>Solution</summary>
   <p>
   ```
-int fib(int n)
-{
-    if (n == 0)
-        return 0;
-    if (n == 1)
-        return 1;
-    return fib(n - 1) + fib(n - 2);
-}
+  int fib(int n)
+  {
+      if (n == 0)
+          return 0;
+      if (n == 1)
+          return 1;
+      return fib(n - 1) + fib(n - 2);
+  }
   ```
   </p>
 </details>
@@ -144,23 +144,23 @@ int main(void)
 <details><summary>Solution</summary>
   <p>
   ```
-for (int i = 0; i < n - 1; i++)
-{
-    bool swaps = false;
-    for (int j = 0; j < n - 1 - i; j++)
-    {
-        if (values[j] > values[j + 1])
-        {
-            swaps = true;
-            int temp = values[j];
-            values[j] = values[j + 1];
-            values[j + 1] = temp;
-        }
-    }
+  for (int i = 0; i < n - 1; i++)
+  {
+      bool swaps = false;
+      for (int j = 0; j < n - 1 - i; j++)
+      {
+          if (values[j] > values[j + 1])
+          {
+              swaps = true;
+              int temp = values[j];
+              values[j] = values[j + 1];
+              values[j + 1] = temp;
+          }
+      }
 
-    if (swaps == false)
-        break;
-}
+      if (swaps == false)
+          break;
+  }
   ```
   </p>
 </details>
@@ -197,20 +197,20 @@ int main(void)
 <details><summary>Solution</summary>
   <p>
   ```
-for (int i = 0; i < n - 1; i++)
-{
-    int min_index = i;
-    for (int j = i + 1; j < n; j++)
-    {
-        if (values[j] < values[min_index])
-        {
-            min_index = j;
-        }
-    }
-    int temp = values[i];
-    values[i] = values[min_index];
-    values[min_index] = temp;
-}
+  for (int i = 0; i < n - 1; i++)
+  {
+      int min_index = i;
+      for (int j = i + 1; j < n; j++)
+      {
+          if (values[j] < values[min_index])
+          {
+              min_index = j;
+          }
+      }
+      int temp = values[i];
+      values[i] = values[min_index];
+      values[min_index] = temp;
+  }
   ```
   </p>
 </details>
@@ -241,86 +241,86 @@ temps/ $
 <details><summary>Solution</summary>
   <p>
   ```
-#include <cs50.h>
-#include <stdio.h>
+  #include <cs50.h>
+  #include <stdio.h>
 
-#define NUM_CITIES 10
+  #define NUM_CITIES 10
 
-typedef struct
-{
-    string city;
-    int temp;
-}
-avg_temp;
+  typedef struct
+  {
+      string city;
+      int temp;
+  }
+  avg_temp;
 
-avg_temp temps[NUM_CITIES];
+  avg_temp temps[NUM_CITIES];
 
-void sort_cities(void);
+  void sort_cities(void);
 
-int main(void)
-{
-    temps[0].city = "Austin";
-    temps[0].temp = 97;
+  int main(void)
+  {
+      temps[0].city = "Austin";
+      temps[0].temp = 97;
 
-    temps[1].city = "Boston";
-    temps[1].temp = 82;
+      temps[1].city = "Boston";
+      temps[1].temp = 82;
 
-    temps[2].city = "Chicago";
-    temps[2].temp = 85;
+      temps[2].city = "Chicago";
+      temps[2].temp = 85;
 
-    temps[3].city = "Denver";
-    temps[3].temp = 90;
+      temps[3].city = "Denver";
+      temps[3].temp = 90;
 
-    temps[4].city = "Las Vegas";
-    temps[4].temp = 105;
+      temps[4].city = "Las Vegas";
+      temps[4].temp = 105;
 
-    temps[5].city = "Los Angeles";
-    temps[5].temp = 82;
+      temps[5].city = "Los Angeles";
+      temps[5].temp = 82;
 
-    temps[6].city = "Miami";
-    temps[6].temp = 97;
+      temps[6].city = "Miami";
+      temps[6].temp = 97;
 
-    temps[7].city = "New York";
-    temps[7].temp = 85;
+      temps[7].city = "New York";
+      temps[7].temp = 85;
 
-    temps[8].city = "Phoenix";
-    temps[8].temp = 107;
+      temps[8].city = "Phoenix";
+      temps[8].temp = 107;
 
-    temps[9].city = "San Francisco";
-    temps[9].temp = 66;
+      temps[9].city = "San Francisco";
+      temps[9].temp = 66;
 
-    sort_cities();
+      sort_cities();
 
-    printf("\nAverage July Temperatures by City\n\n");
+      printf("\nAverage July Temperatures by City\n\n");
 
-    for (int i = 0; i < NUM_CITIES; i++)
-    {
-        printf("%s: %i\n", temps[i].city, temps[i].temp);
-    }
-}
+      for (int i = 0; i < NUM_CITIES; i++)
+      {
+          printf("%s: %i\n", temps[i].city, temps[i].temp);
+      }
+  }
 
-// TODO: Sort cities by temperature in descending order
-void sort_cities(void)
-{
-    for (int i = 0; i < NUM_CITIES - 1; i++)
-    {
-        bool swaps = false;
-        for (int j = 0; j < NUM_CITIES - 1 - i; j++)
-        {
-            if (temps[j].temp < temps[j + 1].temp)
-            {
-                swaps = true;
-                avg_temp temp = temps[j];
-                temps[j] = temps[j + 1];
-                temps[j + 1] = temp;
-            }
-        }
-        if (!swaps)
-        {
-            break;
-        }
-    }
-}
+  // TODO: Sort cities by temperature in descending order
+  void sort_cities(void)
+  {
+      for (int i = 0; i < NUM_CITIES - 1; i++)
+      {
+          bool swaps = false;
+          for (int j = 0; j < NUM_CITIES - 1 - i; j++)
+          {
+              if (temps[j].temp < temps[j + 1].temp)
+              {
+                  swaps = true;
+                  avg_temp temp = temps[j];
+                  temps[j] = temps[j + 1];
+                  temps[j + 1] = temp;
+              }
+          }
+          if (!swaps)
+          {
+              break;
+          }
+      }
+  }
   ```
   </p>
 </details>
@@ -343,45 +343,45 @@ The max value is 10.
 <details><summary>Solution</summary>
   <p>
   ```
-// Practice writing a function to find a max value
+  // Practice writing a function to find a max value
 
-#include <cs50.h>
-#include <stdio.h>
+  #include <cs50.h>
+  #include <stdio.h>
 
-int max(int array[], int n);
+  int max(int array[], int n);
 
-int main(void)
-{
-    int n;
-    do
-    {
-        n = get_int("Number of elements: ");
-    } 
-    while (n < 1);
+  int main(void)
+  {
+      int n;
+      do
+      {
+          n = get_int("Number of elements: ");
+      } 
+      while (n < 1);
 
-    int arr[n];
+      int arr[n];
 
-    for (int i = 0; i < n; i++)
-    {
-        arr[i] = get_int("Element %i: ", i);
-    }
+      for (int i = 0; i < n; i++)
+      {
+          arr[i] = get_int("Element %i: ", i);
+      }
 
-    printf("The max value is %i.\n", max(arr, n));
-}
+      printf("The max value is %i.\n", max(arr, n));
+  }
 
-// TODO: return the max value
-int max(int array[], int n)
-{
-    int max = array[0];
-    for (int i = 1; i < n; i++)
-    {
-        if (array[i] > max)
-        {
-            max = array[i];
-        }
-    }
-    return max;
-}
+  // TODO: return the max value
+  int max(int array[], int n)
+  {
+      int max = array[0];
+      for (int i = 1; i < n; i++)
+      {
+          if (array[i] > max)
+          {
+              max = array[i];
+          }
+      }
+      return max;
+  }
   ```
   </p>
 </details>
