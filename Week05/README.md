@@ -23,7 +23,7 @@ int main(void)
     char *word1 = get_string("string1: ");
     char *word2 = get_string("string2: ");
     
-    printf("%s\n", concatenate(s1, s2));
+    printf("%s\n", concatenate(word1, word2));
     free(s3);
 }
 
