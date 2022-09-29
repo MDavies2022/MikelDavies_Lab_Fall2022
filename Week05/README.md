@@ -42,11 +42,10 @@ Combined: Hello World!
 ```
 
 <details><summary>Solution</summary>
-  <p>
+  <br>
     ```
     Code Here
     ```
-  </p>
 </details>
 
 
