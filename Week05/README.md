@@ -51,7 +51,9 @@ Combined: Hello World!
 
 ## **Problem 2**
 
-Write a recursive program `copy.c` that takes an input and output file as command line arguments. It should write the contents of the input to the output.
+Write a program `copy.c` that takes an input and output file as command line arguments. It should write the contents of the input to the output.
+
+Use `infile.txt` and `outfile.txt` to test!
 
 ```
 Distribution Code:
@@ -80,7 +82,7 @@ Usage:
 
 ## **Problem 3**
 
-Write a program `bottomup.c` that ...
+Write a program `bottomup.c` that flips a .bmp file!
 
 ```
 wget https://cdn.cs50.net/2022/fall/labs/4/bottomup.zip
@@ -89,7 +91,7 @@ wget https://cdn.cs50.net/2022/fall/labs/4/bottomup.zip
 
 ## **Problem 4**
 
-Write a program `license.c` that ...
+Write a program `license.c` that prints out license plate numbers.
 
 ```
 wget https://cdn.cs50.net/2022/fall/labs/4/license.zip
@@ -99,6 +101,8 @@ wget https://cdn.cs50.net/2022/fall/labs/4/license.zip
 ## **Problem 5**
 
 Write a program `gif.c` that detects if a file is a gif or not! Note that the first six characters of a GIF 89a file are the characters `G`, `I`, `F`, `8`, `9`, `a`.
+
+Use `turtle.gif` and `turtle.html` to test!
 
 ```
 Distribution Code:
