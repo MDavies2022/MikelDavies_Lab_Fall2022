@@ -49,7 +49,7 @@ char *concatenate(char *word1, char *word2)
 
 ## **Problem 2**
 
-Write a recursive program `copy.c` that takes an input and output file as command line arguments. It should write the contents of the input to the output.
+Write a program `copy.c` that takes an input and output file as command line arguments. It should write the contents of the input to the output.
 
 Use the files in the repository titled `infile.txt` and `outfiled.txt` to test the program! Note that `outfile.txt` is initially empty!
 
