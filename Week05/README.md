@@ -41,6 +41,14 @@ string2: World!
 Combined: Hello World!
 ```
 
+<details><summary>Solution</summary>
+  <p>
+    ```
+    Code Here
+    ```
+  </p>
+</details>
+
 
 ## **Problem 2**
 
