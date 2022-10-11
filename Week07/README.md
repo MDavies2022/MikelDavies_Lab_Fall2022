@@ -124,6 +124,8 @@ Input: Moo
 
 Write a program `taqueria.py` that enables a user to place an order, prompting them for items, one per line, until the user inputs control-d (which is a common way of ending one’s input to a program). After each inputted item, display the total cost of all items inputted thus far, prefixed with a dollar sign ($) and formatted to two decimal places. Treat the user’s input case insensitively. Ignore any input that isn’t an item. Assume that every item on the menu will be titlecased.
 
+Get the distribution code from `wget https://cdn.cs50.net/2022/fall/labs/6/taqueria.zip` and get started!
+
 ```
 Usage:
 [directory] $ python taqueria.py
@@ -132,4 +134,20 @@ Total: $8.50
 Item: Quesadilla
 Item: Bowl
 Total: $17.00
+```
+
+
+## **Problem 8**
+
+Write a program `phonebook.py` that reads from a CSV file (provided as a command-line argument) and prints out the data on each person in the phone book. The file contains columns `name` and `number`, representing each person's name and phone number, respectively.
+
+Grab phonebook.csv from the files in Week07 to try!
+
+```
+Usage:
+[directory] $ python phonebook.py
+Emma's phone number is 617-555-0100
+Rodrigo's phone number is 617-555-0101
+Brian's phone number is 617-555-0102
+David's phone number is 617-555-0103
 ```
