@@ -69,6 +69,8 @@ print(factorial(number))
 
 Write a program `copy.py` that copies the contents of one file to another.
 
+Snag Input.txt and Output.txt from the repository to try!
+
 ```
 Usage:
 [directory] $ python copy.py input.txt output.txt
