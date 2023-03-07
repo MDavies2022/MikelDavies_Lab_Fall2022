@@ -4,13 +4,6 @@ These are the problems you should be able to solve at the end of Week06! If you 
 or me directly at mikeldavies@college.harvard.edu
 
 
-## **LAB PROBLEM**
-
-Go to 'https://cs50.harvard.edu/college/2022/fall/labs/6/'
-
-Then download the distribution code by typing the following into your terminal: `wget https://cdn.cs50.net/2022/fall/labs/6/world-cup.zip`
-
-
 # Example Problems
 The problems are listed in order of difficulty!
 
